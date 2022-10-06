@@ -7,7 +7,7 @@ def roll(roll):
     diceCount = int(roll.split('d')[1])
     try:
         for x in range(numberOfRolls):
-            print(f"Rolling die {x+1}..")
+            print(f"Rolling die {x+1}...")
             result = randint(1, diceCount)
             print(f"Result: {result}")
             rolling.append(result)
