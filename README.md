@@ -10,7 +10,7 @@
 A Python package to roll any dice combo!
 
 ### Installation
-```
+```python
 pip3 install Any-Dice-Simulator
 ```
 ## Usage
@@ -68,8 +68,10 @@ Sum: 369
 ```
 
 ### Todo [Not exhaustive]
+- Add subclasses for common die sets (d20, d50, d100, etc.)
 - Add functionality to roll biased die
 - Functionality to roll multiple types of die at once
 - Try an object oriented approach with the code
 - Add external random number generators
 - Add dice rolling graphic
+
