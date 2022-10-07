@@ -31,18 +31,18 @@ from anyDiceSimulator import dieclasses
 ```
 The dieclasses module contains the following classes:
 1. **Die** :
-      - **Inputs**:
-            - *sides*: Number of sides (Default :6)
-            - *numOnSides*: Die face values (Defualt: [1, 2, 3, 4, 5, 6]
-      - **Functions**:
-            - *dieProperties*: Current state of the Die [Number of sides, Face values, biased?, Bias weights]
-            - *rollDie*:
-                  - *Inputs*:
-                        - n (Int): Number of times the die needs to be rolled
-                  - *Output*:
-                        - Roll result (List): List of roll results
-                        - Sum of Roll results (Int)
-Sample Usage:
+      - **Inputs**:  
+            - *sides*: Number of sides (Default :6)  
+            - *numOnSides*: Die face values (Defualt: [1, 2, 3, 4, 5, 6]  
+      - **Functions**:  
+            - *dieProperties*: Current state of the Die [Number of sides, Face values, biased?, Bias weights]  
+            - *rollDie*:  
+                  - *Inputs*:  
+                        - n (Int): Number of times the die needs to be rolled  
+                  - *Output*:  
+                        - Roll result (List): List of roll results  
+                        - Sum of Roll results (Int)  
+#### Sample Usage:
 ```python
 die1 = Die()
 die1.dieProperties() # Print the die properties - (1)
