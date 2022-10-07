@@ -30,7 +30,7 @@ import the die classes using:
 from anyDiceSimulator import dieclasses
 ```
 The dieclasses module contains the following classes:
-- **Die** :
+1. **Die** :
       - **Inputs**:
             - *sides*: Number of sides (Default :6)
             - *numOnSides*: Die face values (Defualt: [1, 2, 3, 4, 5, 6]
