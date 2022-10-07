@@ -68,10 +68,10 @@ Sum: 369
 ```
 
 ### Todo [Not exhaustive]
-- Add subclasses for common die sets (d20, d50, d100, etc.)
-- Add functionality to roll biased die
-- Functionality to roll multiple types of die at once
-- Try an object oriented approach with the code
-- Add external random number generators
-- Add dice rolling graphic
+- [ ] Add subclasses for common die sets (d20, d50, d100, etc.)
+- [x] Add functionality to roll biased die
+- [ ] Functionality to roll multiple types of die at once
+- [x] Try an object oriented approach with the code
+- [ ] Add external random number generators
+- [ ] Add dice rolling graphic
 
