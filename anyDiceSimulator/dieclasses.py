@@ -60,3 +60,18 @@ class biasedDie(Die):
         print(f"Number of rolls: {n}")
         result = random.choices(self.numOnSides, k=n, weights=self.biasWeights)
         return result, sum(result)
+
+
+class TwentySidedDie(Die):
+    def __init__(self):
+        super().__init__(20, [*range(1, 21)])
+
+
+class FiftySidedDie(Die):
+    def __init__(self):
+        super().__init__(50, [*range(1, 51)])
+
+
+class HundredSidedDie(Die):
+    def __init__(self):
+        super().__init__(100, [*range(1, 101)])
