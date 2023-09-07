@@ -1,27 +1,26 @@
 from random import randint
+from typing import Tuple, List
 
 
-def roll(roll):
-    rolling = []
-    numberOfRolls = int(roll.split('d')[0])
-    diceCount = int(roll.split('d')[1])
+def roll(roll_spec: str) -> Tuple[List[int], int]:
+    rolled = []
+    number_of_rolls, die_side_count = [int(substr) for substr in roll_spec.split("d")]
     try:
-        for x in range(numberOfRolls):
-            print(f"Rolling die {x+1}...")
-            result = randint(1, diceCount)
+        for x in range(number_of_rolls):
+            print(f"Rolling die {x + 1}...")
+            result = randint(1, die_side_count)
             print(f"Result: {result}")
-            rolling.append(result)
+            rolled.append(result)
     except Exception as err:
-        print(f'I got bungled @_@ \n Error: {err}')
+        print(f"I got bungled @_@ \n Error: {err}")
 
-    return rolling, sum(rolling)
-
-
-def printResult(listOfRolls, sumOfRolls):
-    print(f'You rolled {listOfRolls} which has a total'
-          f' of {sumOfRolls}')
+    return rolled, sum(rolled)
 
 
-def rolldice(x):
-    rollList, rollTotal = roll(x)
-    printResult(rollList, rollTotal)
+def print_result(rolled: List[int], sum_of_rolls: int):
+    print(f"You rolled {rolled} which has a total of {sum_of_rolls}")
+
+
+def rolldice(roll_spec: str):
+    rolled, sum_of_rolls = roll(roll_spec)
+    print_result(rolled, sum_of_rolls)
