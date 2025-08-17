@@ -14,6 +14,7 @@ class Die:
         print("Biased: False")
         print("Side weights: None")
         print("==========================================")
+        print("Neha is the best")
 
     def rollDie(self, n):
         print(f"Number of rolls: {n}")
