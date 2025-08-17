@@ -71,7 +71,6 @@ class FiftySidedDie(Die):
     def __init__(self):
         super().__init__(50, [*range(1, 51)])
 
-
-class TwoHundredSidedDie(Die):
+class ThreeHundredSidedDie(Die):
     def __init__(self):
-        super().__init__(200, [*range(1, 201)])
+        super().__init__(300, [*range(1, 301)])
