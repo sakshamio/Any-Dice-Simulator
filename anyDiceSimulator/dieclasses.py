@@ -8,7 +8,7 @@ class Die:
 
     def dieProperties(self):
         print("==========================================")
-        print("Die properties ->")
+        print("Die properties!!!~! ->")
         print(f"Number of sides: {self.sides}")
         print(f"Numbering on sides: {self.numOnSides}")
         print("Biased: False")
